@@ -10,7 +10,7 @@
       perspective: 1000px;
     }
     .card-inner {
-      transition: transform 0.6s;
+      transition: transform 0.6s ease-in-out;
       transform-style: preserve-3d;
       position: relative;
     }
@@ -43,7 +43,7 @@
         <div class="card-inner w-full h-full">
           <!-- Front -->
           <div class="card-front bg-white shadow-lg">
-            <img src="https://dl.dropboxusercontent.com/scl/fi/2pi1550krsn8w89tmzz8a/IMG_2171.JPG?rlkey=lvhtke35sijz4dkabpnkmmzk0&st=tptjasdb&/300x200" alt="Rider Photo" class="w-full h-48 object-cover">
+            <img src="https://dl.dropboxusercontent.com/scl/fi/2pi1550krsn8w89tmzz8a/IMG_2171.JPG?rlkey=lvhtke35sijz4dkabpnkmmzk0&st=tptjasdb" alt="Rider Photo" class="w-full h-48 object-cover">
             <div class="p-4">
               <h2 class="text-xl font-semibold">Todd Kellett</h2>
               <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
@@ -52,6 +52,9 @@
                 <li>2025 FIM Sand Race World Champion</li>
               </ul>
               <div class="flex space-x-4">
+                <a href="#" class="text-blue-500 hover:text-blue-700">Twitter</a>
+                <a href="#" class="text-pink-500 hover:text-pink-700">Instagram</a>
+              </div>
             </div>
           </div>
           <!-- Back -->
@@ -59,13 +62,13 @@
             <h3 class="text-lg font-bold mb-2">Career Stats</h3>
             <ul class="text-sm space-y-1">
               <li>Years Active: 2004–Present</li>
-              <li>Latest Achievenment: 2025 World FIM Sand Champion</li>
+              <li>Latest Achievement: 2025 World FIM Sand Champion</li>
               <li>Team: Monster Energy Yamaha Factory</li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Repeat for more cards -->
+      <!-- Repeat for more cards if needed -->
     </div>
   </div>
 </body>
