@@ -14,7 +14,7 @@
       transform-style: preserve-3d;
       position: relative;
     }
-    .card:hover .card-inner {
+    .card.flipped .card-inner {
       transform: rotateY(180deg);
     }
     .card-front,
@@ -38,8 +38,8 @@
     <h1 class="text-4xl font-bold text-center mb-10">Our 2025 Star Riders</h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-      <!-- Rider Card with Flip -->
-      <div class="card h-96">
+      <!-- Rider Card with Click Flip -->
+      <div class="card h-96 cursor-pointer" onclick="this.classList.toggle('flipped')">
         <div class="card-inner w-full h-full">
           <!-- Front -->
           <div class="card-front bg-white shadow-lg">
@@ -62,6 +62,7 @@
               <li>Years Active: 2004–Present</li>
               <li>Latest Achievement: 2025 World FIM Sand Champion</li>
               <li>Team: Monster Energy Yamaha Factory</li>
+              <li>Class: Adult Solo</li>
             </ul>
           </div>
         </div>
