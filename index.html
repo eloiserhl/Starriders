@@ -13,6 +13,8 @@
       transition: transform 0.6s ease-in-out;
       transform-style: preserve-3d;
       position: relative;
+      border: 4px double #ef4444; /* Tailwind red-500 double border */
+      border-radius: 1rem;
     }
     .card.flipped .card-inner {
       transform: rotateY(180deg);
@@ -44,26 +46,27 @@
           <!-- Front -->
           <div class="card-front bg-white shadow-lg">
             <img src="https://dl.dropboxusercontent.com/scl/fi/2pi1550krsn8w89tmzz8a/IMG_2171.JPG?rlkey=lvhtke35sijz4dkabpnkmmzk0&st=tptjasdb" alt="Rider Photo" class="w-full h-48 object-cover">
+            <div class="w-full bg-red-600 text-white text-center text-xs font-bold py-2">Adult Solo</div>
             <div class="p-4">
               <h2 class="text-xl font-semibold">Todd Kellett</h2>
               <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
               <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
-                <li>Class: Adult Solo</li>
                 <li>6x Adult Solo Weston Beach Race Champion</li>
                 <li>2025 FIM Sand Race World Champion</li>
               </ul>
-              <div class="flex space-x-4">
-              </div>
             </div>
           </div>
           <!-- Back -->
-          <div class="card-back bg-gray-900 text-white p-4 flex flex-col justify-center items-center">
-            <h3 class="text-lg font-bold mb-2">Career Stats</h3>
-            <ul class="text-sm space-y-1">
-              <li>Years Active: 2004–Present</li>
-              <li>Latest Achievement: 2025 World FIM Sand Champion</li>
-              <li>Team: Monster Energy Yamaha Factory</li>
+          <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center">
+            <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏁 Career Stats</h3>
+            <ul class="text-sm space-y-2">
+              <li><span class="font-semibold text-gray-600">Years Active:</span> 2004–Present</li>
+              <li><span class="font-semibold text-gray-600">Latest Achievement:</span> 2025 World FIM Sand Champion</li>
+              <li><span class="font-semibold text-gray-600">Team:</span> Monster Energy Yamaha Factory</li>
             </ul>
+            <div class="mt-6">
+              <a href="https://instagram.com/todd_kellett" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-6 py-3 rounded shadow">Follow Todd</a>
+            </div>
           </div>
         </div>
       </div>
