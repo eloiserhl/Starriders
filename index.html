@@ -13,7 +13,7 @@
       transition: transform 0.6s ease-in-out;
       transform-style: preserve-3d;
       position: relative;
-      border: 4px double #ef4444; /* Tailwind red-500 double border */
+      border: 4px double #252626; /* Tailwind black-500 double border */
       border-radius: 1rem;
     }
     .card.flipped .card-inner {
@@ -76,65 +76,39 @@
 </body>
 </html>
 <!-- Featured Rider Card -->
-<style>
-    .card {
-      perspective: 1000px;
-    }
-    .card-inner {
-      transition: transform 0.6s ease-in-out;
-      transform-style: preserve-3d;
-      position: relative;
-      border: 4px double #00a1e4; /* Tailwind red-500 double border */
-      border-radius: 1rem;
-    }
-    .card.flipped .card-inner {
-      transform: rotateY(180deg);
-    }
-    .card-front,
-    .card-back {
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 1rem;
-      overflow: hidden;
-    }
-    .card-back {
-      transform: rotateY(180deg);
-    }
-  </style>
-<div class="card h-96 cursor-pointer" onclick="this.classList.toggle('flipped')">
-  <div class="card-inner w-full h-full">
-    <!-- Front -->
-    <div class="card-front bg-white shadow-lg">
-      <img src="https://dl.dropboxusercontent.com/scl/fi/example1.jpg" alt="Rider Photo" class="w-full h-48 object-cover">
-      <div class="w-full text-white text-center text-xs font-bold py-2" style="background-color: #00a1e4;">Featured</div>
-      <div class="p-4">
-        <h2 class="text-xl font-semibold">Jane Doe</h2>
-        <p class="text-sm text-gray-500 mb-2">🇺🇸 United States</p>
-        <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
-          <li>2024 Women’s MX Champion</li>
-          <li>Founder, Ride Strong</li>
-        </ul>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Rider Card with Click Flip -->
+      <div class="card h-96 cursor-pointer" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner w-full h-full">
+          <!-- Front -->
+          <div class="card-front bg-white shadow-lg">
+            <img src="https://dl.dropboxusercontent.com/scl/fi/2pi1550krsn8w89tmzz8a/IMG_2171.JPG?rlkey=lvhtke35sijz4dkabpnkmmzk0&st=tptjasdb" alt="Rider Photo" class="w-full h-48 object-cover">
+            <div class="w-full bg-bright blue-600 text-white text-center text-xs font-bold py-2">Adult Solo</div>
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Todd Kellett</h2>
+              <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
+              <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
+                <li>6x Adult Solo Weston Beach Race Champion</li>
+                <li>2025 FIM Sand Race World Champion</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center">
+            <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏁 Career Stats</h3>
+            <ul class="text-sm space-y-2">
+              <li><span class="font-semibold text-gray-600">Years Active:</span> 2004–Present</li>
+              <li><span class="font-semibold text-gray-600">Latest Achievement:</span> 2025 World FIM Sand Champion</li>
+              <li><span class="font-semibold text-gray-600">Team:</span> Monster Energy Yamaha Factory</li>
+            </ul>
+            <div class="mt-6">
+              <a href="https://instagram.com/todd_kellett" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-6 py-3 rounded shadow">Follow Todd</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- Back -->
-    <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center">
-      <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏍️ Her Journey</h3>
-      <p class="text-sm mb-4">From a small-town racer to a national champion, Jane's grit and determination inspired a generation of young women in motocross.</p>
-      <ul class="text-sm space-y-2 mb-4 text-left">
-        <li><span class="font-semibold text-gray-600">Years Active:</span> 2012–Present</li>
-        <li><span class="font-semibold text-gray-600">Quote:</span> “Ride fearless, ride proud.”</li>
-      </ul>
-      <a href="https://instagram.com/jane_doe" target="_blank"
-         class="text-white text-sm font-semibold px-6 py-3 rounded shadow"
-         style="background-color: #00a1e4; transition: background-color 0.3s;"
-         onmouseover="this.style.backgroundColor='#0080b3'"
-         onmouseout="this.style.backgroundColor='#00a1e4'">
-         Follow Jane
-      </a>
+      <!-- Repeat for more cards if needed -->
     </div>
   </div>
-</div>
+</body>
+</html>
