@@ -41,9 +41,9 @@
 
     <!-- Filter Buttons -->
     <div class="flex justify-center gap-4 mb-10">
-      <button onclick="filterCards('red')" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded">Red</button>
-      <button onclick="filterCards('blue')" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Blue</button>
-      <button onclick="filterCards('yellow')" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 rounded">Yellow</button>
+      <button onclick="filterCards('Star Riders')" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded">Red</button>
+      <button onclick="filterCards('Ones to Watch')" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Blue</button>
+      <button onclick="filterCards('Featured')" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 rounded">Yellow</button>
       <button onclick="filterCards('all')" class="bg-gray-300 hover:bg-gray-400 text-black font-semibold px-4 py-2 rounded">All</button>
     </div>
 
@@ -162,14 +162,44 @@
         </div>
       </div>
 
-      <!-- BLUE Card -->
+  </div>
+
+    <!-- Lathan Pritchard -->
       <div class="card h-96 cursor-pointer filter-card blue" onclick="this.classList.toggle('flipped')">
         <div class="card-inner w-full h-full">
           <div class="card-front bg-white shadow-lg">
-            <img src="https://dl.dropboxusercontent.com/scl/fi/2pi1550krsn8w89tmzz8a/IMG_2171.JPG?rlkey=lvhtke35sijz4dkabpnkmmzk0&st=tptjasdb" alt="Rider Photo" class="w-full h-48 object-cover">
-            <div class="w-full bg-blue-600 text-white text-center text-xs font-bold py-2">Adult Solo</div>
+            <img src="https://dl.dropboxusercontent.com/scl/fi/a5hx4rhlpj66kwxf1oyhi/image002.jpg?rlkey=5r7itxl4gf2nwjuhn5iafq4mx&st=2bh02wx9&dl" alt="Rider Photo" class="w-full h-48 object-cover">
+            <div class="w-full bg-blue-600 text-black text-center text-xs font-bold py-2">4x4 Quad</div>
             <div class="p-4">
-              <h2 class="text-xl font-semibold">Todd Kellett</h2>
+              <h2 class="text-xl font-semibold">Lathan Pritchard</h2>
+              <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
+              <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
+                <li>2nd place 2024 Competitor</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center">
+            <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏁 Career Stats</h3>
+            <ul class="text-sm space-y-2">
+              <li><span class="font-semibold text-gray-600">Years Active:</span> UN–Present</li>
+              <li><span class="font-semibold text-gray-600">Latest Achievement:</span>4th overall and 2nd in the 4×4 quad class at the 2024 Weston Beach Race</li>
+              <li><span class="font-semibold text-gray-600">Team:</span> N/A </li>
+            </ul>
+            <div class="mt-6">
+              <a href="https://instagram.com/todd_kellett" target="_blank" class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm font-semibold px-6 py-3 rounded shadow">Follow Todd</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brian Broekaert -->
+      <div class="card h-96 cursor-pointer filter-card yellow" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner w-full h-full">
+          <div class="card-front bg-white shadow-lg">
+            <img src="https://dl.dropboxusercontent.com/scl/fi/9y1wzn2flx8rib0tuvwb7/474275112_1444443106529864_2664533365266699272_n.jpg?rlkey=3sv50dur4cznmvk4a2dwled3o&st=nve1afu9&dl" alt="Rider Photo" class="w-full h-48 object-cover">
+            <div class="w-full bg-yellow-400 text-white text-center text-xs font-bold py-2">Adult Solo</div>
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Brian Broekaert</h2>
               <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
               <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
                 <li>6x Adult Solo Weston Beach Race Champion</li>
@@ -191,37 +221,6 @@
         </div>
       </div>
 
-      <!-- YELLOW Card -->
-      <div class="card h-96 cursor-pointer filter-card yellow" onclick="this.classList.toggle('flipped')">
-        <div class="card-inner w-full h-full">
-          <div class="card-front bg-white shadow-lg">
-            <img src="https://dl.dropboxusercontent.com/scl/fi/2pi1550krsn8w89tmzz8a/IMG_2171.JPG?rlkey=lvhtke35sijz4dkabpnkmmzk0&st=tptjasdb" alt="Rider Photo" class="w-full h-48 object-cover">
-            <div class="w-full bg-yellow-400 text-black text-center text-xs font-bold py-2">Adult Solo</div>
-            <div class="p-4">
-              <h2 class="text-xl font-semibold">Todd Kellett</h2>
-              <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
-              <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
-                <li>6x Adult Solo Weston Beach Race Champion</li>
-                <li>2025 FIM Sand Race World Champion</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center">
-            <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏁 Career Stats</h3>
-            <ul class="text-sm space-y-2">
-              <li><span class="font-semibold text-gray-600">Years Active:</span> 2004–Present</li>
-              <li><span class="font-semibold text-gray-600">Latest Achievement:</span> 2025 World FIM Sand Champion</li>
-              <li><span class="font-semibold text-gray-600">Team:</span> Monster Energy Yamaha Factory</li>
-            </ul>
-            <div class="mt-6">
-              <a href="https://instagram.com/todd_kellett" target="_blank" class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm font-semibold px-6 py-3 rounded shadow">Follow Todd</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <script>
     function filterCards(color) {
