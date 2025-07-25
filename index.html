@@ -221,33 +221,33 @@ Here’s what he had to say: “I found the race on YouTube and dropped a commen
 </div>
     </div>
   </div>
-<!--Brad Thornhill -->
-<div class="card h-96 cursor-pointer filter-card blue" onclick="this.classList.toggle('flipped')">
-  <div class="card-inner w-full h-full">
-    <div class="card-front bg-white shadow-lg">
-      <img src="https://dl.dropboxusercontent.com/scl/fi/9i97ip23y2pvf881mdppi/Screenshot-2025-07-25-at-12.17.14.png?rlkey=jyxb4ai5169dbk9yafojruq8d&st=ld9uzv56&dl" alt="Brad Thornhill" class="w-full h-48 object-cover">
-      <div class="w-full bg-blue-600 text-white text-center text-xs font-bold py-2">Adult Solo</div>
-      <div class="p-4">
-        <h2 class="text-xl font-semibold">Brad Thornhill</h2>
-        <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
-        <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
-          <li>14nd in adult solo overall, Weston 2024</li>
-        </ul>
+  <!-- Brad Thornhill Card (Fixed) -->
+  <div class="card h-96 cursor-pointer filter-card blue" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner w-full h-full">
+      <div class="card-front bg-white shadow-lg h-full flex flex-col">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/9i97ip23y2pvf881mdppi/Screenshot-2025-07-25-at-12.17.14.png?rlkey=jyxb4ai5169dbk9yafojruq8d&st=ld9uzv56&dl" alt="Brad Thornhill" class="w-full h-48 object-cover">
+        <div class="w-full bg-blue-600 text-white text-center text-xs font-bold py-2">Adult Solo</div>
+        <div class="p-4 flex-1 flex flex-col">
+          <h2 class="text-xl font-semibold">Brad Thornhill</h2>
+          <p class="text-sm text-gray-500 mb-2">🇬🇧 United Kingdom</p>
+          <ul class="text-sm text-gray-700 list-disc list-inside mb-4">
+            <li>14nd in adult solo overall, Weston 2024</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center">
-      <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏁 Career Stats</h3>
-      <ul class="text-sm space-y-2">
-        <li><span class="font-semibold text-gray-600">Years Active:</span> NA–Present</li>
-        <li><span class="font-semibold text-gray-600">Latest Achievement:</span> 14nd in adult solo overall, Weston 2024 </li>
-        <li><span class="font-semibold text-gray-600">Team:</span> Independent</li>
-      </ul>
-      <div class="mt-6">
-        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-3 rounded shadow">Follow Lathan</a>
+      <div class="card-back bg-white text-gray-900 px-6 py-8 flex flex-col justify-center items-center text-center h-full">
+        <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2 w-full">🏁 Career Stats</h3>
+        <ul class="text-sm space-y-2">
+          <li><span class="font-semibold text-gray-600">Years Active:</span> NA–Present</li>
+          <li><span class="font-semibold text-gray-600">Latest Achievement:</span> 14nd in adult solo overall, Weston 2024</li>
+          <li><span class="font-semibold text-gray-600">Team:</span> Independent</li>
+        </ul>
+        <div class="mt-6">
+          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-3 rounded shadow">Follow Lathan</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <script>
     function filterCards(color) {
       const cards = document.querySelectorAll('.filter-card');
